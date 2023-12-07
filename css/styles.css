@@ -1,0 +1,160 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* MI CODIGO */
+
+/* HEADER */
+
+header {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding: 30px 35.5px;
+	align-items: center;
+	box-sizing: border-box;
+}
+
+.bangkok {
+	color: rgb(40, 39, 39);
+	font-size: 30px;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.toggle-div {
+	box-sizing: border-box;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	color: rgb(40, 39, 39);
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 10px;
+}
+
+.toggle {
+	box-sizing: border-box;
+	width: 100px;
+	height: 35px;
+	background-color: lightgrey;
+	border-radius: 50px;
+	border: none;
+	display: flex;
+	align-items: center;
+}
+
+.toggle:hover {
+	cursor: pointer;
+	background-color: black;
+}
+
+.sol-div {
+	width: 30px;
+	height: 30px;
+	border-radius: 50px;
+	background-color: rgb(247, 215, 7);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.sol-div img {
+	width: 25px;
+	height: 25px;
+}
+
+/* MAIN */
+
+.main-image {
+	box-sizing: border-box;
+	display: flex;
+	justify-content: center;
+}
+
+.text-page {
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 20px;
+	color: rgb(40, 39, 39);
+	text-align: justify;
+	width: 100%;
+	padding: 20px 200px;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+h1 {
+	font-size: 40px;
+}
+
+html.dark-theme {
+	background-color: black;
+}
+
+html.dark-theme .bangkok {
+	color: yellow;
+}
+
+html.dark-theme .text-page h1 {
+	color: yellow;
+}
+
+html.dark-theme .text-page p {
+	color: white;
+}
+
+html.dark-theme .toggle {
+	justify-content: end;
+
+}
+
+html.dark-theme .sol-div {
+	background-color: blue;
+
+}
+
+html.dark-theme .toggle-div div {
+	color: white;
+}
